@@ -22,7 +22,9 @@ def calculate_schedule(principle, tenor, interest_rate):
 
     return schedule_df, emi, total_interest
 
+st.markdown('<link rel="stylesheet" type="text/css" href="style.css">', unsafe_allow_html=True)
 st.title("Loan Calculator By 6-digits")
+
 
 # Sidebar inputs
 principle = st.sidebar.number_input("Enter loan amount (AED)", min_value=1, value=100000)
